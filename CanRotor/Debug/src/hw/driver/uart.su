@@ -1,0 +1,15 @@
+uart.c:30:6:uartInit	16	static
+uart.c:41:6:uartOpen	24	static
+uart.c:110:10:uartAvailable	24	static
+uart.c:130:9:uartRead	24	static
+uart.c:148:10:uartWrite	32	static
+uart.c:175:10:uartWriteIT	32	static
+uart.c:202:10:uartPrintf	292	static
+uart.c:220:10:uartPrintf_IT	292	static
+uart.c:238:10:uartGetBaud	24	static
+uart.c:257:6:uartSetBaud	24	static
+uart.c:292:6:HAL_UART_ErrorCallback	16	static
+uart.c:310:6:HAL_UART_RxCpltCallback	16	static
+uart.c:325:6:HAL_UART_MspInit	48	static
+uart.c:460:13:MX_DMA_Init	16	static
+uart.c:482:6:HAL_UART_MspDeInit	16	static

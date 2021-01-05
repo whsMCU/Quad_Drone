@@ -1,0 +1,6 @@
+timer.c:17:6:timerInit	80	static
+timer.c:178:6:HAL_TIM_IC_MspInit	56	static
+timer.c:244:6:HAL_TIM_Base_MspInit	24	static
+timer.c:264:6:HAL_TIM_MspPostInit	40	static
+timer.c:293:6:HAL_TIM_IC_MspDeInit	16	static
+timer.c:342:6:HAL_TIM_Base_MspDeInit	16	static

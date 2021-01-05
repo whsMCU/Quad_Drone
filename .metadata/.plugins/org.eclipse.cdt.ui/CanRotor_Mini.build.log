@@ -1,0 +1,12 @@
+13:49:37 **** Build of configuration Debug for project CanRotor_Mini ****
+make all 
+arm-none-eabi-size   CanRotor_Mini.elf 
+   text	   data	    bss	    dec	    hex	filename
+  84900	   2544	   5784	  93228	  16c2c	CanRotor_Mini.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy.exe -O ihex "CanRotor_Mini.elf" "CanRotor_Mini.hex"
+ 
+
+13:49:39 Build Finished. 0 errors, 0 warnings. (took 1s.645ms)
+

@@ -1,0 +1,10 @@
+i2c.c:16:6:i2cInit	16	static
+i2c.c:37:6:I2C_ByteWrite	56	static
+i2c.c:81:6:I2C_BitWrite	48	static
+i2c.c:104:6:I2C_ByteRead	48	static
+i2c.c:123:6:I2C_ByteWrite_HAL	48	static
+i2c.c:142:6:I2C_BitRead	40	static
+i2c.c:149:6:I2C_Write	32	static
+i2c.c:171:6:I2C_Read	32	static
+i2c.c:193:6:HAL_I2C_MspInit	40	static
+i2c.c:221:6:HAL_I2C_MspDeInit	16	static

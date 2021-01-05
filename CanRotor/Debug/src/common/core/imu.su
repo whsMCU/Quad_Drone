@@ -1,0 +1,8 @@
+imu.c:22:7:invSqrt	32	static
+imu.c:33:6:calculateAngles	24	static
+imu.c:69:6:TM_AHRSIMU_Init	24	static
+imu.c:82:6:TM_AHRSIMU_UpdateAHRS	200	static
+imu.c:193:6:TM_AHRSIMU_UpdateIMU	120	static
+imu.c:279:6:MadgwickQuaternionUpdate	200	static
+imu.c:380:6:computeIMU	32	static
+imu.c:406:6:cliImu	40	static

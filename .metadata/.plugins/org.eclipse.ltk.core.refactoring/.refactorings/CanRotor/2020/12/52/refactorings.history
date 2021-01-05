@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CanRotor/src/common/core/telemery.c&apos; to &apos;telemetry.c&apos;" description="Rename resource &apos;telemery.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/common/core/telemery.c" name="telemetry.c" stamp="1608954621324" updateReferences="true"/>
+</session>

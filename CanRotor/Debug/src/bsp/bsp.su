@@ -1,0 +1,8 @@
+bsp.c:17:6:HAL_SYSTICK_Callback	4	static
+bsp.c:22:6:bspInit	16	static
+bsp.c:31:6:delay	16	static
+bsp.c:36:10:millis	8	static
+bsp.c:41:10:micros	12	static
+bsp.c:51:5:__io_putchar	16	static
+bsp.c:57:6:SystemClock_Config	72	static
+bsp.c:100:6:Error_Handler	4	static

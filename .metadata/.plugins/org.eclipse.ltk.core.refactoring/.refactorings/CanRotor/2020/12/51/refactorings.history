@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;ap, bsp, common, hw&apos; to &apos;src&apos;" description="Move 4 resources to &apos;src&apos;" destination="src" element1="ap" element2="bsp" element3="common" element4="hw" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1608389583231" updateReferences="true"/>
+</session>

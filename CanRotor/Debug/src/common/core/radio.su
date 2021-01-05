@@ -1,0 +1,6 @@
+radio.c:26:6:HAL_TIM_IC_CaptureCallback	16	static
+radio.c:150:6:mwArm	8	static
+radio.c:159:6:mwDisarm	4	static
+radio.c:167:6:RC_Init	16	static
+radio.c:184:6:computeRC	16	static
+radio.c:279:6:cliRadio	32	static

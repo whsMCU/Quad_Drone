@@ -1,0 +1,6 @@
+pid.c:49:6:PIDControlInit	16	static
+pid.c:150:6:Control	56	static
+pid.c:195:6:AcroPID	32	static
+pid.c:253:6:AnglePID	40	static
+pid.c:311:6:GpsPID	40	static
+pid.c:370:5:constrain	24	static

@@ -1,0 +1,30 @@
+/*
+ * ap.c
+ *
+ *  Created on: Dec 6, 2020
+ *      Author: baram
+ */
+
+
+#include "ap.h"
+
+void apInit(void)
+{
+	logPrintf("stm32cli V1.0\n");
+
+  cliOpen(_DEF_UART1, 57600);
+
+
+
+}
+
+void apMain(void)
+{
+
+	while(1)
+	{
+
+		}
+
+
+}
