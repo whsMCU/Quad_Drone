@@ -40,7 +40,8 @@ src/hw/driver/i2c.o: ../src/hw/driver/i2c.c \
  D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ D:/STM32CubeIDE/CanRotor/src/common/hw/include/cli.h
 
 D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:
 
@@ -125,3 +126,5 @@ D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm3
 D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
 D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
+
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/cli.h:

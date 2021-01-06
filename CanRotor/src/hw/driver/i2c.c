@@ -7,11 +7,13 @@
 
 
 #include "i2c.h"
+#include "cli.h"
 
 extern eeror_t Error;
 
 I2C_HandleTypeDef hi2c2;
 
+static void cliI2C(cli_args_t *args);
 
 bool i2cInit(void)
 {
@@ -30,6 +32,7 @@ bool i2cInit(void)
   {
     Error_Handler();
   }
+  cliAdd("i2c", cliI2C);
   return ret;
 }
 
@@ -190,6 +193,18 @@ void I2C_Read(uint16_t DevAddress, uint8_t *pData, uint16_t Size)
   }
 }
 
+bool i2cIsDeviceReady(uint8_t dev_addr)
+{
+
+  if (HAL_I2C_IsDeviceReady(&hi2c2, dev_addr << 1, 10, 10) == HAL_OK)
+  {
+    __enable_irq();
+    return true;
+  }
+
+  return false;
+}
+
 void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
 {
 
@@ -240,5 +255,88 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
   /* USER CODE BEGIN I2C2_MspDeInit 1 */
 
   /* USER CODE END I2C2_MspDeInit 1 */
+  }
+}
+
+void cliI2C(cli_args_t *args)
+{
+  bool ret = true;
+  bool i2c_ret;
+
+  uint16_t dev_addr;
+  uint16_t reg_addr;
+  uint16_t length;
+  uint8_t data;
+
+  uint32_t i;
+  uint8_t i2c_data[128];
+  uint32_t pre_time;
+
+
+  if (args->argc == 1)
+  {
+
+    if(args->isStr(0, "scan") == true)
+    {
+      for (i=0x00; i<= 0x7F; i++)
+      {
+        if (i2cIsDeviceReady(i) == true)
+        {
+          cliPrintf("I2C CH%d Addr 0x%X : OK\n", 2, i);
+        }
+      }
+    }
+  }
+  else if (args->argc == 4)
+  {
+    dev_addr = (uint16_t) args->getData(1);
+    reg_addr = (uint16_t) args->getData(2);
+    length   = (uint16_t) args->getData(3);
+
+    if(args->isStr(0, "read") == true)
+    {
+      for (i=0; i<length; i++)
+      {
+        i2c_ret = I2C_ByteRead(dev_addr<<1, reg_addr+i, I2C_MEMADD_SIZE_8BIT, i2c_data, 1);
+        if (i2c_ret == true)
+        {
+          cliPrintf("%d I2C - 0x%02X : 0x%02X\n", reg_addr+i, i2c_data[0]);
+        }
+        else
+        {
+          cliPrintf("%d I2C - Fail \n", 2);
+          break;
+        }
+      }
+    }
+    else if(args->isStr(0, "write") == true)
+    {
+      pre_time = millis();
+      data = (uint8_t) length;
+      i2c_ret = I2C_ByteWrite_HAL(dev_addr<<1, reg_addr, I2C_MEMADD_SIZE_8BIT, &data, 1);
+      if (i2c_ret == true)
+      {
+        cliPrintf("%d I2C - 0x%02X : 0x%02X, %d ms\n", 2, reg_addr, data, millis()-pre_time);
+      }
+      else
+      {
+        cliPrintf("%d I2C - Fail \n", 2);
+      }
+    }
+    else
+    {
+      ret = false;
+    }
+  }
+  else
+  {
+    ret = false;
+  }
+
+  if (ret == false)
+  {
+    cliPrintf( "i2c scan\n");
+    cliPrintf( "i2c read dev_addr reg_addr length\n");
+    cliPrintf( "i2c write dev_addr reg_addr data\n");
   }
 }

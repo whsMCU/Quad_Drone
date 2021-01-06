@@ -299,3 +299,789 @@ arm-none-eabi-size   CanRotor.elf
  107628	    572	   6472	 114672	  1bff0	CanRotor.elf
 Finished building: default.size.stdout
  
+20:00:16 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+arm-none-eabi-gcc "../src/hw/hw.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/hw.d" -MT"src/hw/hw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/hw.o"
+arm-none-eabi-gcc "../src/common/core/eeprom.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/eeprom.d" -MT"src/common/core/eeprom.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/eeprom.o"
+arm-none-eabi-gcc "../src/common/core/gps.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/gps.d" -MT"src/common/core/gps.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/gps.o"
+arm-none-eabi-gcc "../src/common/core/sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/sensor.d" -MT"src/common/core/sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/sensor.o"
+arm-none-eabi-gcc "../src/bsp/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/bsp/stm32f1xx_hal_msp.d" -MT"src/bsp/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../src/bsp/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/bsp/stm32f1xx_it.d" -MT"src/bsp/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f1xx_it.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/hw/driver/i2c.c:15:20: error: unknown type name 'cli_args_t'; did you mean 'flags_t'?
+ static void cliI2C(cli_args_t *args);
+                    ^~~~~~~~~~
+                    flags_t
+../src/hw/driver/i2c.c: In function 'i2cInit':
+../src/hw/driver/i2c.c:34:3: warning: implicit declaration of function 'cliAdd' [-Wimplicit-function-declaration]
+   cliAdd("i2c", cliI2C);
+   ^~~~~~
+../src/hw/driver/i2c.c:34:17: error: 'cliI2C' undeclared (first use in this function)
+   cliAdd("i2c", cliI2C);
+                 ^~~~~~
+../src/hw/driver/i2c.c:34:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c: In function 'i2cIsDeviceReady':
+../src/hw/driver/i2c.c:198:29: error: 'p_handle' undeclared (first use in this function); did you mean '_rand48'?
+   if (HAL_I2C_IsDeviceReady(p_handle, dev_addr << 1, 10, 10) == HAL_OK)
+                             ^~~~~~~~
+                             _rand48
+../src/hw/driver/i2c.c: At top level:
+../src/hw/driver/i2c.c:260:13: error: unknown type name 'cli_args_t'; did you mean 'flags_t'?
+ void cliI2C(cli_args_t *args)
+             ^~~~~~~~~~
+             flags_t
+../src/common/core/gps.c: In function 'GPS_calc_velocity':
+../src/common/core/gps.c:368:17: warning: unused variable 'speed_old' [-Wunused-variable]
+  static int16_t speed_old[2] = {0,0};
+                 ^~~~~~~~~
+At top level:
+../src/common/core/gps.c:368:17: warning: 'speed_old' defined but not used [-Wunused-variable]
+../src/common/core/gps.c:120:17: warning: 'land_settle_timer' defined but not used [-Wunused-variable]
+ static uint32_t land_settle_timer;
+                 ^~~~~~~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:00:34 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/hw/driver/i2c.c: In function 'i2cIsDeviceReady':
+../src/hw/driver/i2c.c:199:29: error: 'p_handle' undeclared (first use in this function); did you mean '_rand48'?
+   if (HAL_I2C_IsDeviceReady(p_handle, dev_addr << 1, 10, 10) == HAL_OK)
+                             ^~~~~~~~
+                             _rand48
+../src/hw/driver/i2c.c:199:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:281:39: error: 'I2C_MAX_CH' undeclared (first use in this function); did you mean 'INTMAX_C'?
+     print_ch = constrain(print_ch, 1, I2C_MAX_CH);
+                                       ^~~~~~~~~~
+                                       INTMAX_C
+../src/hw/driver/i2c.c:288:13: error: too many arguments to function 'i2cIsDeviceReady'
+         if (i2cIsDeviceReady(print_ch, i) == true)
+             ^~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:196:6: note: declared here
+ bool i2cIsDeviceReady(uint8_t dev_addr)
+      ^~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:309:19: warning: implicit declaration of function 'i2cReadByte' [-Wimplicit-function-declaration]
+         i2c_ret = i2cReadByte(ch, dev_addr, reg_addr+i, i2c_data, 100);
+                   ^~~~~~~~~~~
+../src/hw/driver/i2c.c:325:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:01:53 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'i2cIsDeviceReady':
+../src/hw/driver/i2c.c:199:29: error: 'p_handle' undeclared (first use in this function); did you mean '_rand48'?
+   if (HAL_I2C_IsDeviceReady(p_handle, dev_addr << 1, 10, 10) == HAL_OK)
+                             ^~~~~~~~
+                             _rand48
+../src/hw/driver/i2c.c:199:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:285:50: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+           cliPrintf("I2C CH%d Addr 0x%X : OK\n", print_ch+1, i);
+                                                  ^~~~~~~~
+                                                  printf
+../src/hw/driver/i2c.c:293:39: error: 'I2C_MAX_CH' undeclared (first use in this function); did you mean 'INTMAX_C'?
+     print_ch = constrain(print_ch, 1, I2C_MAX_CH);
+                                       ^~~~~~~~~~
+                                       INTMAX_C
+../src/hw/driver/i2c.c:304:19: warning: implicit declaration of function 'i2cReadByte' [-Wimplicit-function-declaration]
+         i2c_ret = i2cReadByte(ch, dev_addr, reg_addr+i, i2c_data, 100);
+                   ^~~~~~~~~~~
+../src/hw/driver/i2c.c:320:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:02:30 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:285:50: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+           cliPrintf("I2C CH%d Addr 0x%X : OK\n", print_ch+1, i);
+                                                  ^~~~~~~~
+                                                  printf
+../src/hw/driver/i2c.c:285:50: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c:293:39: error: 'I2C_MAX_CH' undeclared (first use in this function); did you mean 'INTMAX_C'?
+     print_ch = constrain(print_ch, 1, I2C_MAX_CH);
+                                       ^~~~~~~~~~
+                                       INTMAX_C
+../src/hw/driver/i2c.c:304:19: warning: implicit declaration of function 'i2cReadByte' [-Wimplicit-function-declaration]
+         i2c_ret = i2cReadByte(ch, dev_addr, reg_addr+i, i2c_data, 100);
+                   ^~~~~~~~~~~
+../src/hw/driver/i2c.c:320:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:07:20 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:295:16: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+     ch       = print_ch - 1;
+                ^~~~~~~~
+                printf
+../src/hw/driver/i2c.c:295:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c:316:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:07:26 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:303:51: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+           cliPrintf("%d I2C - 0x%02X : 0x%02X\n", print_ch, reg_addr+i, i2c_data[0]);
+                                                   ^~~~~~~~
+                                                   printf
+../src/hw/driver/i2c.c:303:51: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c:315:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:09:15 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:307:41: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+           cliPrintf("%d I2C - Fail \n", print_ch);
+                                         ^~~~~~~~
+                                         printf
+../src/hw/driver/i2c.c:307:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c:315:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:09:27 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:17: warning: implicit declaration of function 'i2cWriteByte' [-Wimplicit-function-declaration]
+       i2c_ret = i2cWriteByte(ch, dev_addr, reg_addr, (uint8_t)length, 100);
+                 ^~~~~~~~~~~~
+../src/hw/driver/i2c.c:319:56: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+         cliPrintf("%d I2C - 0x%02X : 0x%02X, %d ms\n", print_ch, reg_addr, length, millis()-pre_time);
+                                                        ^~~~~~~~
+                                                        printf
+../src/hw/driver/i2c.c:319:56: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:13:44 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, length, 1);
+                                                                             ^~~~~~
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint16_t {aka short unsigned int}'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:318:56: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+         cliPrintf("%d I2C - 0x%02X : 0x%02X, %d ms\n", print_ch, reg_addr, length, millis()-pre_time);
+                                                        ^~~~~~~~
+                                                        printf
+../src/hw/driver/i2c.c:318:56: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:13:55 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, length, 1);
+                                                                             ^~~~~~
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint16_t {aka short unsigned int}'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:322:39: error: 'print_ch' undeclared (first use in this function); did you mean 'printf'?
+         cliPrintf("%d I2C - Fail \n", print_ch);
+                                       ^~~~~~~~
+                                       printf
+../src/hw/driver/i2c.c:322:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:13:59 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, length, 1);
+                                                                             ^~~~~~
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint16_t {aka short unsigned int}'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108948	    572	   6472	 115992	  1c518	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:14:54 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' from incompatible pointer type [-Wincompatible-pointer-types]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, &length, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint16_t * {aka short unsigned int *}'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108948	    572	   6472	 115992	  1c518	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:15:20 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&length, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:315:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:15:39 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: error: lvalue required as unary '&' operand
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, &(uint8_t)length, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:15:56 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:315:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&length, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:315:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:18:28 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+arm-none-eabi-gcc "../src/hw/hw.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/hw.d" -MT"src/hw/hw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/hw.o"
+arm-none-eabi-gcc "../src/common/core/eeprom.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/eeprom.d" -MT"src/common/core/eeprom.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/eeprom.o"
+arm-none-eabi-gcc "../src/common/core/sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/sensor.d" -MT"src/common/core/sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/sensor.o"
+arm-none-eabi-gcc "../src/bsp/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/bsp/stm32f1xx_hal_msp.d" -MT"src/bsp/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../src/bsp/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/bsp/stm32f1xx_it.d" -MT"src/bsp/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f1xx_it.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+In file included from ../src/common/core/eeprom.c:10:0:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+In file included from ../src/hw/driver/i2c.c:9:0:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+In file included from ../src/common/core/sensor.c:10:0:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+../src/hw/driver/i2c.c: At top level:
+../src/hw/driver/i2c.c:126:6: error: redefinition of 'I2C_ByteWrite_HAL'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+In file included from ../src/hw/driver/i2c.c:9:0:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:35:6: note: previous definition of 'I2C_ByteWrite_HAL' was here
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+In file included from ../src/hw/hw.h:16:0,
+                 from ../src/hw/hw.c:9:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+In file included from D:/STM32CubeIDE/CanRotor/src/hw/hw.h:16:0,
+                 from D:/STM32CubeIDE/CanRotor/src/ap/ap.h:11,
+                 from D:/STM32CubeIDE/CanRotor/src/main.h:12,
+                 from ../src/bsp/stm32f1xx_hal_msp.c:23:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+In file included from D:/STM32CubeIDE/CanRotor/src/hw/hw.h:16:0,
+                 from D:/STM32CubeIDE/CanRotor/src/ap/ap.h:11,
+                 from ../src/main.h:12,
+                 from ../src/main.c:9:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+In file included from D:/STM32CubeIDE/CanRotor/src/hw/hw.h:16:0,
+                 from ../src/ap/ap.h:11,
+                 from ../src/ap/ap.c:9:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+In file included from D:/STM32CubeIDE/CanRotor/src/hw/hw.h:16:0,
+                 from D:/STM32CubeIDE/CanRotor/src/ap/ap.h:11,
+                 from D:/STM32CubeIDE/CanRotor/src/main.h:12,
+                 from ../src/bsp/stm32f1xx_it.c:22:
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h: In function 'I2C_ByteWrite_HAL':
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: error: 'hi2c2' undeclared (first use in this function)
+   state = HAL_I2C_Mem_Write(&hi2c2, DevAddress, MemAddress, MemAddSize, pData, Size, 1);
+                              ^~~~~
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:39:30: note: each undeclared identifier is reported only once for each function it appears in
+D:/STM32CubeIDE/CanRotor/src/common/hw/include/i2c.h:44:12: error: 'Error' undeclared (first use in this function); did you mean 'perror'?
+     while (Error.error !=0)
+            ^~~~~
+            perror
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [src/common/core/subdir.mk:48: src/common/core/eeprom.o] Error 1
+make: *** [src/hw/subdir.mk:18: src/hw/hw.o] Error 1
+make: *** [src/bsp/subdir.mk:35: src/bsp/stm32f1xx_hal_msp.o] Error 1
+make: *** [src/common/core/subdir.mk:66: src/common/core/sensor.o] Error 1
+make: *** [src/subdir.mk:18: src/main.o] Error 1
+make: *** [src/ap/subdir.mk:18: src/ap/ap.o] Error 1
+make: *** [src/bsp/subdir.mk:37: src/bsp/stm32f1xx_it.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:18:35 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+arm-none-eabi-gcc "../src/hw/hw.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/hw.d" -MT"src/hw/hw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/hw.o"
+arm-none-eabi-gcc "../src/common/core/eeprom.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/eeprom.d" -MT"src/common/core/eeprom.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/eeprom.o"
+arm-none-eabi-gcc "../src/common/core/sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/common/core/sensor.d" -MT"src/common/core/sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/sensor.o"
+arm-none-eabi-gcc "../src/bsp/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/bsp/stm32f1xx_hal_msp.d" -MT"src/bsp/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../src/bsp/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/bsp/stm32f1xx_it.d" -MT"src/bsp/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f1xx_it.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+../src/hw/driver/i2c.c:299:18: warning: 'length' may be used uninitialized in this function [-Wmaybe-uninitialized]
+       for (i=0; i<length; i++)
+                 ~^~~~~~~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108948	    572	   6472	 115992	  1c518	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:18:46 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+../src/hw/driver/i2c.c:319:9: warning: 'length' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         cliPrintf("%d I2C - 0x%02X : 0x%02X, %d ms\n", 2, reg_addr, length, millis()-pre_time);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108948	    572	   6472	 115992	  1c518	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:19:38 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:316:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&length, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:316:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:270:11: warning: unused variable 'data' [-Wunused-variable]
+   uint8_t data;
+           ^~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:20:41 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:317:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&data, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:317:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:20:46 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:21:05 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:317:85: error: expected ')' before '&' token
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t&)data, 1);
+                                                                                     ^
+../src/hw/driver/i2c.c:317:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t&)data, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+make: *** [src/hw/driver/subdir.mk:32: src/hw/driver/i2c.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:21:11 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:317:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)data, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:21:23 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:317:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&data, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:317:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:21:32 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:317:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&data, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:317:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:21:43 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:317:77: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+       i2c_ret = I2C_ByteWrite_HAL(dev_addr, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t)&length, 1);
+                                                                             ^
+../src/hw/driver/i2c.c:317:77: warning: passing argument 4 of 'I2C_ByteWrite_HAL' makes pointer from integer without a cast [-Wint-conversion]
+../src/hw/driver/i2c.c:126:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'unsigned char'
+ bool I2C_ByteWrite_HAL(uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size)
+      ^~~~~~~~~~~~~~~~~
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:21:53 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108956	    572	   6472	 116000	  1c520	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:23:13 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+../src/hw/driver/i2c.c: In function 'cliI2C':
+../src/hw/driver/i2c.c:266:11: warning: unused variable 'ch' [-Wunused-variable]
+   uint8_t ch;
+           ^~
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108964	    572	   6472	 116008	  1c528	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
+20:25:58 **** Incremental Build of configuration Debug for project CanRotor ****
+make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
+arm-none-eabi-size   CanRotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 108964	    572	   6472	 116008	  1c528	CanRotor.elf
+Finished building: default.size.stdout
+ 
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 

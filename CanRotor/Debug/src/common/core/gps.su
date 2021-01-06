@@ -23,4 +23,4 @@ gps.c:584:10:GPS_coord_to_degrees	40	static
 gps.c:626:10:grab_fields	24	static
 gps.c:650:9:hex_c	16	static
 gps.c:659:6:GPS_set_pids	4	static
-gps.c:677:6:cliGps	40	static
+gps.c:677:6:cliGps	24	static

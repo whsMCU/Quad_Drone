@@ -1,10 +1,20 @@
-21:26:20 **** Incremental Build of configuration Debug for project CanRotor ****
+20:25:58 **** Incremental Build of configuration Debug for project CanRotor ****
 make -j8 all 
+arm-none-eabi-gcc "../src/hw/driver/i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -DSTM32 -DSTM32F103CBTx -DSTM32F1 -DDEBUG -c -I"D:/STM32CubeIDE/CanRotor/src" -I"D:/STM32CubeIDE/CanRotor/src/ap" -I"D:/STM32CubeIDE/CanRotor/src/bsp" -I"D:/STM32CubeIDE/CanRotor/src/common" -I"D:/STM32CubeIDE/CanRotor/src/common/core" -I"D:/STM32CubeIDE/CanRotor/src/hw" -I"D:/STM32CubeIDE/CanRotor/src/lib" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/CMSIS/Include" -I"D:/STM32CubeIDE/CanRotor/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"D:/STM32CubeIDE/CanRotor/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"src/hw/driver/i2c.d" -MT"src/hw/driver/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/driver/i2c.o"
+arm-none-eabi-gcc -o "CanRotor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\CanRotor\src\bsp\ldscript\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CanRotor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CanRotor.elf
+ 
+arm-none-eabi-objdump -h -S  CanRotor.elf  > "CanRotor.list"
+arm-none-eabi-objcopy  -O binary  CanRotor.elf  "CanRotor.bin"
 arm-none-eabi-size   CanRotor.elf 
    text	   data	    bss	    dec	    hex	filename
- 107628	    572	   6472	 114672	  1bff0	CanRotor.elf
+ 108964	    572	   6472	 116008	  1c528	CanRotor.elf
 Finished building: default.size.stdout
  
+Finished building: CanRotor.bin
+ 
+Finished building: CanRotor.list
+ 
 
-21:26:21 Build Finished. 0 errors, 0 warnings. (took 594ms)
+20:26:03 Build Finished. 0 errors, 0 warnings. (took 4s.395ms)
 
