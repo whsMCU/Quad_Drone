@@ -937,7 +937,7 @@ uint8_t Baro_update()
 {
 	static uint32_t baroDeadline = 0;
 	static int state = 0;
-	uint32_t currentTimeUs = micros();
+	static uint32_t currentTimeUs=0;
 
 	if(state >= 2)
 	{
@@ -945,6 +945,7 @@ uint8_t Baro_update()
 		MS561101BA_Calculate();
 		return 1;
 	}
+	currentTimeUs = micros();
 	if ((int32_t)(currentTimeUs - baroDeadline) < 0) return 0;
 	baroDeadline = currentTimeUs;
 	if (state == 0)

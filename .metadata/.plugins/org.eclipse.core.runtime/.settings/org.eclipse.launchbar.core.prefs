@@ -3,7 +3,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CanRotor Debug
 eclipse.preferences.version=1
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CanRotor\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CanRotor\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CanRotor\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CanRotor_Mini\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CanRotor_Mini\ Debug/activeLaunchTarget=null\:---

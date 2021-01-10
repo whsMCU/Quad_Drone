@@ -301,7 +301,7 @@ void Calibrate_gyro(void)
 			logPrintf(".");
 #endif
 		}
-		Gyro_getADC();
+		//Gyro_getADC();
 		Mag_getADC();
 		for(axis=0; axis<3; axis++)
 		{
@@ -933,11 +933,10 @@ void Baro_Common(void){
   baroHistIdx = indexplus1;
 }
 
-uint8_t Baro_update()
+uint8_t Baro_update(uint32_t currentTime)
 {
 	static uint32_t baroDeadline = 0;
 	static int state = 0;
-	uint32_t currentTimeUs = micros();
 
 	if(state >= 2)
 	{
@@ -945,8 +944,8 @@ uint8_t Baro_update()
 		MS561101BA_Calculate();
 		return 1;
 	}
-	if ((int32_t)(currentTimeUs - baroDeadline) < 0) return 0;
-	baroDeadline = currentTimeUs;
+	if ((int32_t)(currentTime - baroDeadline) < 0) return 0;
+	baroDeadline = currentTime;
 	if (state == 0)
 	{
 		Baro_Common();

@@ -60,7 +60,7 @@ void apMain(void)
 		{ //4~206us
 			case 0: //200us
 				taskOrder++;
-				if(Baro_update(currentTime)) break;
+				if(Baro_update()) break;
 			case 1:  //80us
 				taskOrder++;
 				if(getEstimatedAltitude() !=0) break;

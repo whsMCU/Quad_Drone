@@ -538,7 +538,7 @@ void magcalMPU9250(float * dest1, float * dest2);
 void MS5611_Init(ms5611_osr_t osr);
 
 void Baro_Common(void);
-uint8_t Baro_update(uint32_t currentTime);
+uint8_t Baro_update();
 uint8_t getEstimatedAltitude(void);
 bool isBaroCalibrationComplete(void);
 
